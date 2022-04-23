@@ -1,18 +1,16 @@
 function setup(){
-    canvas= createCanvas(850,500);
+    canvas= createCanvas(280,280);
     canvas.center();
     background('white');
-    canvas.mouseReleased(classifyCanvas);
     synth=window.speechSynthesis;
 }
-
 function preload(){
     classifier=ml5.imageClassifier("DoodleNet");
 }
 function menace(){
     background('white');
+    synth.cancel();
     document.getElementById("lol").innerHTML="Label: ";
-        synth.cancel();
 }
 function draw(){
 strokeWeight(13);
@@ -21,7 +19,7 @@ if(mouseIsPressed){
     line(pmouseX,pmouseY,mouseX,mouseY);
 }
 }
-function classifyCanvas(){
+function kance(){
     classifier.classify(canvas,gotResults);
 }
 function gotResults(error,results){
