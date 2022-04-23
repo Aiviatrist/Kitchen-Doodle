@@ -1,0 +1,23 @@
+body {
+    background-color:RGB(37, 90, 223);
+
+}
+h1{
+    color:goldenrod;
+    background-color:RGB(37, 90, 223);
+}
+#ggg{
+    float: right;
+}
+canvas{
+    border: 5px dashed black;
+    border-radius: 20px;
+    margin-top: 50px;
+
+}
+
+
+p{
+  padding-top: 10px;
+  color: azure;
+}
